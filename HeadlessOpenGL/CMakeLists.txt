@@ -1,3 +1,13 @@
+if (WIN32)
+  set(OPENGL_LIBRARIES opengl32.lib CACHE FILEPATH "opengl lib file")
+  set(GLX_LIBRARIES "")
+endif (WIN32)
+
+if (UNIX)
+  set(OPENGL_LIBRARIES "/usr/lib/x86_64-linux-gnu/libOpenGL.so.0.0.0" CACHE FILEPATH "opengl lib file")
+  set(GLX_LIBRARIES "/usr/lib/x86_64-linux-gnu/libGLX.so" CACHE FILEPATH "glx lib files")
+endif (UNIX)
+
 set(HDRS
 )
 	
@@ -31,6 +41,7 @@ target_include_directories(HeadlessOpenGL
 	
 target_link_libraries(HeadlessOpenGL
     PRIVATE
-    opengl32.lib
+    ${OPENGL_LIBRARIES}
+    ${GLX_LIBRARIES}
     glfw
     )    
