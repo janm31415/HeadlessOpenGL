@@ -38,7 +38,7 @@ The example:
 
 When running the executable, you might see:
 
-`
+```bash
 OpenGL version: 4.6.0 NVIDIA 535.54
 data[0] = 0.000000
 data[1] = 2.000000
