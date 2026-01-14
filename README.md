@@ -39,39 +39,73 @@ The example:
 When running the executable, you might see:
 
 ```bash
-OpenGL version: 4.6.0 NVIDIA 535.54
-data[0] = 0.000000
-data[1] = 2.000000
-data[2] = 4.000000
-...
-data[15] = 30.000000
-`
+OpenGL version: 4.6.0 NVIDIA 535.54
 
-## Building with CMake
-
-### **Requirements**
-- CMake 3.10+  
-- OpenGL 4.3+ capable GPU and drivers  
-- [GLFW](https://www.glfw.org/) is provided as a submodule 
-- [GLEW](http://glew.sourceforge.net/) is provided as code  
-
----
-
-### **Steps**
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/yourusername/HeadlessOpenGL.git
-cd HeadlessOpenGL
-
-# 2. Create a build directory
-mkdir build && cd build
-
-# 3. Configure the project with CMake
-cmake ..
-
-# 4. Build the project
-cmake --build .
-
-# 5. Run the executable
+data[0] = 0.000000
+
+data[1] = 2.000000
+
+data[2] = 4.000000
+
+...
+
+data[15] = 30.000000
+```
+
+## Building with CMake
+
+
+
+### **Requirements**
+
+- CMake 3.10+  
+
+- OpenGL 4.3+ capable GPU and drivers  
+
+- [GLFW](https://www.glfw.org/) is provided as a submodule 
+
+- [GLEW](http://glew.sourceforge.net/) is provided as code  
+
+
+
+---
+
+
+
+### **Steps**
+
+
+
+```bash
+
+# 1. Clone the repository
+
+git clone https://github.com/yourusername/HeadlessOpenGL.git
+
+cd HeadlessOpenGL
+
+
+
+# 2. Create a build directory
+
+mkdir build && cd build
+
+
+
+# 3. Configure the project with CMake
+
+cmake ..
+
+
+
+# 4. Build the project
+
+cmake --build .
+
+
+
+# 5. Run the executable
+
+
 ./HeadlessOpenGL
+```
