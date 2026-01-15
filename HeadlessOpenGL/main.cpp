@@ -75,6 +75,8 @@ int main(void) {
     }
 
   printf("OpenGL version: %s\n", glGetString(GL_VERSION));
+  printf("Renderer: %s\n", glGetString(GL_RENDERER));
+  printf("Vendor: %s\n", glGetString(GL_VENDOR));
 
   // Create buffer
   const GLuint num_elements = 16;
