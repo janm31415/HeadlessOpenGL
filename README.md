@@ -39,16 +39,13 @@ The example:
 When running the executable, you might see:
 
 ```bash
-OpenGL version: 4.6.0 NVIDIA 535.54
-
+OpenGL version: 4.3.0 NVIDIA 581.42
+Renderer: NVIDIA T1000/PCIe/SSE2
+Vendor: NVIDIA Corporation
 data[0] = 0.000000
-
 data[1] = 2.000000
-
 data[2] = 4.000000
-
 ...
-
 data[15] = 30.000000
 ```
 
@@ -109,3 +106,4 @@ cmake --build .
 
 ./HeadlessOpenGL
 ```
+
